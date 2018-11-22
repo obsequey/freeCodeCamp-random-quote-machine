@@ -4,15 +4,22 @@
   "description": "freecodecamp project",
   "main": "index.js",
   "author": "Aristov A",
+  "scripts": {
+    "dev": "yarn parcel ./public/index.pug"
+  },
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-preset-env": "^1.7.0",
     "parcel": "^1.10.3",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1"
   },
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.3.0",
     "babel-core": "^6.26.3",
     "pug": "^2.0.3",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "vue-template-compiler": "^2.5.17"
   }
 }
