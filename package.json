@@ -12,6 +12,7 @@
     "axios": "^0.18.0",
     "babel-preset-env": "^1.7.0",
     "parcel": "^1.11.0",
+    "reset-css": "^4.0.1",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
     "tachyons": "^4.11.1",
