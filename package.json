@@ -11,15 +11,18 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-preset-env": "^1.7.0",
-    "parcel": "^1.10.3",
-    "vue": "^2.5.17",
+    "parcel": "^1.11.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "tachyons": "^4.11.1",
+    "vue": "^2.5.22",
     "vue-hot-reload-api": "^2.3.1"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.3.0",
+    "@vue/component-compiler-utils": "^2.5.1",
     "babel-core": "^6.26.3",
     "pug": "^2.0.3",
-    "stylus": "^0.54.5",
-    "vue-template-compiler": "^2.5.17"
+    "sass": "^1.16.1",
+    "vue-template-compiler": "^2.5.22"
   }
 }
