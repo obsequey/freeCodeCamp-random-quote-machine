@@ -21,14 +21,26 @@ export default {
   },
   methods: {
     getNewQuote() {
-      axios({
-        method: 'get',
-        url: 'https://breaking-bad-quotes.herokuapp.com/v1/quotes'
-      })
-      .then(response => {
-        this.quote.saying = response.data[0].quote
-        this.quote.author = response.data[0].author
-      })
+      // axios({
+      //   method: 'get',
+      //   url: 'https://breaking-bad-quotes.herokuapp.com/v1/quotes'
+      // })
+      // .then(response => {
+      //   this.quote.saying = response.data[0].quote
+      //   this.quote.author = response.data[0].author
+      // })
+      let request = new XMLHttpRequest();
+
+      request.open('GET', 'https://breaking-bad-quotes.herokuapp.com/v1/quotes', true)
+
+      request.onload = () => {
+        let data = JSON.parse(request.response)
+
+        this.quote.saying = data[0].quote
+        this.quote.author = data[0].author
+      }
+
+      request.send()
     }
   }
 }
